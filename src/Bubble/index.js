@@ -13,7 +13,7 @@ function bubbleSort() {
       }
     }
   }
-  document.getElementById("bubble").innerHTML = array ;
+  document.getElementById("bubble").innerHTML = "Bubble sort: " + array ;
 } 
 
 function insertionSort() {
@@ -31,5 +31,5 @@ function insertionSort() {
     }
     array[back + 1] = number;
   }
-  document.getElementById("insertion").innerHTML = array;
+  document.getElementById("insertion").innerHTML = "Insertion sort: " + array;
 } 
