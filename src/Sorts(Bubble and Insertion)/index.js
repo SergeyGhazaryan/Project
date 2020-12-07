@@ -2,7 +2,7 @@ function bubbleSort() {
   var array = [];
   var size = 10;
   for (var i = 0; i < size; i++) {
-    array.push(Math.floor(Math.random() * 10));
+    array.push(Math.floor(Math.random() * 11));
   }
   for (var i = 0; i < size - 1; i++) {
     for (var j = 0; j < size - 1; j++) {
@@ -13,14 +13,14 @@ function bubbleSort() {
       }
     }
   }
-  document.getElementById("bubble").innerHTML = "Bubble sort: " + array ;
+  document.getElementById("bubble").innerHTML = "<strong>Bubble sort:</strong> " + array ;
 } 
 
 function insertionSort() {
   var array = [];
   var size = 10;
   for (var i = 0; i < size; i++) {
-    array.push(Math.floor(Math.random() * 10));
+    array.push(Math.floor(Math.random() * 11));
   }
   for (var i = 1; i < size; i++) {
     var number = array[i];
@@ -31,5 +31,5 @@ function insertionSort() {
     }
     array[back + 1] = number;
   }
-  document.getElementById("insertion").innerHTML = "Insertion sort: " + array;
+  document.getElementById("insertion").innerHTML = "<strong>Insertion sort:</strong> " + array;
 } 
