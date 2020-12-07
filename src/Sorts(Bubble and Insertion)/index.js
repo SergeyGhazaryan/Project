@@ -2,7 +2,7 @@ function bubbleSort() {
   var array = [];
   var size = 10;
   for (var i = 0; i < size; i++) {
-    array.push(Math.floor(Math.random() * 11));
+    array.push(Math.floor(Math.random() * 10) + 1);
   }
   for (var i = 0; i < size - 1; i++) {
     for (var j = 0; j < size - 1; j++) {
@@ -20,7 +20,7 @@ function insertionSort() {
   var array = [];
   var size = 10;
   for (var i = 0; i < size; i++) {
-    array.push(Math.floor(Math.random() * 11));
+    array.push(Math.floor(Math.random() * 10) + 1);
   }
   for (var i = 1; i < size; i++) {
     var number = array[i];
