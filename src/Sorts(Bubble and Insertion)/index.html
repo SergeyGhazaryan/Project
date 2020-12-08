@@ -15,7 +15,15 @@
     <p id="bubble"></p>
     <p id="insertion"></p>
 
-    <button type="button" onclick="bubbleSort()" class="form">Bubble sort</button>
-    <button type="button" onclick="insertionSort()" class="form">Insertion sort</button>
+    <script>
+        var array1 = [1, 8, 6, 4, 3, 0, 7];
+        var size1 = array1.length;
+
+        var array2 = [12, 6, -5, 8, 3, 1, 0];
+        var size2 = array2.length;
+    </script>
+
+    <button type="button" onclick="bubbleSort(array1, size1)" class="form">Bubble sort</button>
+    <button type="button" onclick="insertionSort(array2, size2)" class="form">Insertion sort</button>
 </body>
 </html>
