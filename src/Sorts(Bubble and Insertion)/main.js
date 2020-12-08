@@ -1,9 +1,9 @@
-var size = parseInt(prompt("Size of array:", ""));
+var size = Number(prompt("Size of array:", ""));
 var array = [];
 for (var i = 0; i < size; i++) {
-  array[i] = parseInt(prompt("Add element:", ""));
+  array[i] = Number(prompt("Add element:", ""));
 }
-var type = parseInt(prompt("Select type of sort (1 or 2) ` 1-Bubble sort, 2-Insertion sort", ""));
+var type = Number(prompt("Select type of sort (1 or 2) ` 1-Bubble sort, 2-Insertion sort", ""));
 if (type == 1) {
   alert(bubbleSort(array, size));
 }
