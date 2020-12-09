@@ -5,10 +5,12 @@ for (var i = 0; i < size; i++) {
 }
 var type = Number(prompt("Select type of sort (1 or 2) ` 1-Bubble sort, 2-Insertion sort", ""));
 if (type == 1) {
-  bubbleSort(array, size);
+  var bubble = bubbleSort(array, size);
+  alert(bubble);
 }
 else if (type == 2) {
-  insertionSort(array, size);
+  var insertion = insertionSort(array, size);
+  alert(insertion);
 }
 else {
   alert("There is no such type");
@@ -24,7 +26,7 @@ function bubbleSort(array, size) {
       }
     }
   }
-  alert(array);
+  return array;
 } 
 
 function insertionSort(array, size) {
@@ -37,5 +39,5 @@ function insertionSort(array, size) {
     }
     array[back + 1] = number;
   }
-  alert(array);
+  return array;
 } 
