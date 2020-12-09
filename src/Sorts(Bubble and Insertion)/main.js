@@ -5,18 +5,18 @@ for (var i = 0; i < size; i++) {
 }
 var type = Number(prompt("Select type of sort (1 or 2) ` 1-Bubble sort, 2-Insertion sort", ""));
 if (type == 1) {
-  alert(bubbleSort(array, size));
+  bubbleSort(array, size);
 }
 else if (type == 2) {
-  alert(insertionSort(array, size));
+  insertionSort(array, size);
 }
 else {
-  alert("Goodbye");
+  alert("There is no such type");
 }
 
 function bubbleSort(array, size) {
   for (var i = 0; i < size - 1; i++) {
-    for (var j = 0; j < size - 1; j++) {
+    for (var j = 0; j < size - i - 1; j++) {
       if (array[j] > array[j + 1]) {
         var number = array[j];
         array[j] = array[j + 1];
@@ -24,7 +24,7 @@ function bubbleSort(array, size) {
       }
     }
   }
-  document.getElementById("bubble").innerHTML = "<strong>Bubble sort:</strong> " + alert(array);
+  alert(array);
 } 
 
 function insertionSort(array, size) {
@@ -37,5 +37,5 @@ function insertionSort(array, size) {
     }
     array[back + 1] = number;
   }
-  document.getElementById("insertion").innerHTML = "<strong>Insertion sort:</strong> " + alert(array);
+  alert(array);
 } 
