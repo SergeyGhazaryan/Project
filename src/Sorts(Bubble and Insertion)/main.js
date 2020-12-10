@@ -27,7 +27,7 @@ function bubbleSort(array, size) {
     }
   }
   return array;
-} 
+}  
 
 function insertionSort(array, size) {
   for (var i = 1; i < size; i++) {
